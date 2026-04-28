@@ -1,4 +1,5 @@
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
+import cvFile from "./assets/pdf/CV_MuhDevanoAlfarizy.pdf";
 
 export default function Hero() {
     return (
@@ -12,6 +13,14 @@ export default function Hero() {
 
                     {/* Social Icons + Line */}
                     <div className="flex items-center gap-3">
+                        <a href={cvFile} download="CV_MuhDevanoAlfarizy.pdf" className="border border-white/20 text-white text-xs md:text-sm px-4 py-2 rounded-full hover:bg-white hover:text-[#080616] transition-all duration-300 flex items-center gap-2 font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                            Download CV
+                        </a>
                         <a href="https://www.linkedin.com/in/devanoalfarizy/" target="_blank" rel="noopener noreferrer" className="rounded-lg flex items-center justify-center">
                             <FaLinkedin className="text-white text-xl md:text-2xl hover:text-white/60 transition-colors" />
                         </a>

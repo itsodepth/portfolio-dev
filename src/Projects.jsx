@@ -14,7 +14,7 @@ export default function Projects() {
 
     return (
         <section className="h-screen w-full flex flex-col items-center justify-center px-6 pt-2 md:pt-10 shrink-0 relative">
-            <h2 className="text-white text-3xl md:text-5xl font-bold mb-6 md:mb-10 tracking-tight">Projects</h2>
+            <h2 className="text-white text-3xl md:text-5xl font-bold mb-10 md:mb-10 tracking-tight">Projects</h2>
 
             <div className="inner-scroll-container grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-7 w-full max-w-5xl overflow-y-auto pr-2 pb-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]" style={{ maxHeight: "65vh" }} onWheel={handleInnerScroll}>
                 {[
@@ -27,9 +27,7 @@ export default function Projects() {
                         <span className="text-[10px] md:text-xs text-white/40 uppercase tracking-widest border border-white/15 rounded-full px-3 py-1 inline-block mb-4">{project.tag}</span>
                         <h3 className="text-white text-lg md:text-xl font-semibold mb-2 group-hover:translate-x-1 transition-transform duration-300">{project.title}</h3>
                         <p className="text-white/50 text-xs md:text-sm leading-relaxed">{project.desc}</p>
-                        <span className="text-white/40 text-xs mt-4 inline-block group-hover:text-white transition-colors">
-                            Lihat Project ↗
-                        </span>
+                        <span className="text-white/40 text-xs mt-4 inline-block group-hover:text-white transition-colors">Lihat Project ↗</span>
                     </a>
                 ))}
             </div>

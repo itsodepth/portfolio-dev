@@ -13,7 +13,7 @@ export default function Certificate() {
 
     return (
         <section className="h-screen w-full flex flex-col items-center justify-center px-6 pt-2 md:pt-10 shrink-0 relative">
-            <h2 className="text-white text-3xl md:text-5xl font-bold mb-6 md:mb-10 tracking-tight">Certificates</h2>
+            <h2 className="text-white text-3xl md:text-5xl font-bold mb-10 md:mb-10 tracking-tight">Certificates</h2>
 
             <div className="inner-scroll-container grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-7 w-full max-w-5xl overflow-y-auto pr-2 pb-8 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]" style={{ maxHeight: "65vh" }} onWheel={handleInnerScroll}>
                 {[

@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "portfolio-dev-4d74a"
-  }
+  },
+  "targets": {
+    "portfolio-dev-4d74a": {
+      "hosting": {
+        "devanoalfarizy": [
+          "devanoalfarizy"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

@@ -5,9 +5,9 @@ export default function Navbar({ setActiveSection }) {
                 <span className="text-white font-semibold text-lg md:text-2xl tracking-wide cursor-pointer" onClick={() => setActiveSection(0)}>
                     depth.
                 </span>
-                <div className="flex gap-4 md:gap-7">
+                <div className="flex gap-3 sm:gap-4 md:gap-7 items-center">
                     {["Experience", "Projects", "Skills", "Certificate", "CV"].map((item, index) => (
-                        <button key={item} onClick={() => setActiveSection(index + 1)} className="text-white/80 text-xs md:text-sm hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0 outline-none whitespace-nowrap">
+                        <button key={item} onClick={() => setActiveSection(index + 1)} className={`text-white/80 text-[11px] sm:text-xs md:text-sm hover:text-white transition-colors cursor-pointer bg-transparent border-none p-0 outline-none whitespace-nowrap ${item === "CV" ? "hidden sm:block" : ""}`}>
                             {item}
                         </button>
                     ))}
