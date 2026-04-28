@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html, body {
+    overscroll-behavior-y: none;
+}
+
 @theme {
     --font-jakarta: "Plus Jakarta Sans", sans-serif;
     --animate-marquee: marquee 45s linear infinite;
